@@ -1,0 +1,48 @@
+<?php 
+  include('connection.php');
+
+   if (isset($_POST['submit'])) 
+  {
+    $uemail = $_POST['uemail'];
+    $psw = $_POST['psw'];
+
+    
+    $sql = "SELECT * FROM register WHERE email='$uemail' and pass='$psw'";
+   $results = mysqli_query($conn, $sql);
+    if (mysqli_num_rows($results) == 1)
+    {
+      //echo " login successful";
+      header("location:home.php");
+    }
+    else {
+      echo " login failed";
+    }
+  }
+?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+	      <link rel="stylesheet" type="text/css" href="style.css">
+        <title>LOGIN</title>
+    </head>
+
+<body class="formstyle">
+<form action="login.php"  method="POST">
+  <div >
+	  <h2 align="center">Login</h2>
+
+  </div>
+
+  <div >
+        <input type="text" placeholder="Enter Email " name="uemail" required>
+        <br><br>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <br><br>
+        <button type="submit">LOGIN</button>
+  </div>
+
+</form>
+
+</body>
+</html>
