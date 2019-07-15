@@ -1,0 +1,90 @@
+.tab-con table {
+  border-left: none;
+  border-right: none;
+}
+.tab-con table .team-name {
+  width: 150px;
+}
+.tab-con table tr td {
+  padding: 8px 0 8px 10px;
+  width: 120px;
+  border-bottom: none;
+  color: #505050;
+}
+.tab-con table tr td:first-child {
+  padding-left: 15px;
+  width: 45px;
+}
+.tab-con table tr:hover {
+  background-color: #fbc02d;
+}
+.tab-con table tr:first-child {
+  background-color: #000;
+}
+.tab-con table tr:first-child td {
+  padding: 8px 0 8px 10px;
+  border: none;
+  color: #fbc02d;
+}
+.match-fixtures-page .match-list {
+  background: url(images/match-bg2.jpg);
+  background-size: cover;
+}
+.match-fixtures-page .sidebar-area {
+  margin-top: 6px;
+}
+.rs-res .team-res {
+  background: url(images/match-bg.jpg);
+  background-size: cover;
+  position: relative;
+}
+.rs-res .team-res table {
+  border: none;
+}
+.rs-res .team-res table tr.single-res td {
+  padding: 20px 10px;
+  border: none;
+  color: #ffffff;
+  width: auto;
+  z-index: 9;
+  position: relative;
+}
+.rs-res .team-res table tr.single-res td.team-name {
+  font-weight: bold;
+}
+.rs-res .team-res table tr.single-res td.team1 img {
+  margin-right: 10px;
+  width: 25px;
+}
+.rs-res .team-res table tr.single-res td.team2 img {
+  margin-left: 10px;
+  width: 25px;
+}
+.rs-res .team-res table tr.single-res td.match-res .match-score {
+  display: inline-block;
+  padding: 2px 15px;
+  background: #fbc02d;
+  color: #111111;
+  font-weight: bold;
+}
+.rs-res .team-res table tr.single-res td.match-venu span {
+  display: block;
+}
+.rs-res .team-res table tr.single-res td.view-statictics a {
+  color: #fbc02d;
+}
+.rs-res .team-res table tr.single-res td.view-statictics a:hover {
+  color: #ffffff;
+}
+.rs-res .team-res table tr.single-res:nth-child(odd) {
+  background: rgba(0, 0, 0, 0.6);
+}
+.rs-res .team-res table tr.single-res:nth-child(even) {
+  background: transparent;
+}
+.rs-res-single .match-stats {
+  background: url(images/match-bg.jpg);
+  background-size: cover;
+  position: relative;
+  padding: 20px 0;
+}
